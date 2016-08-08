@@ -41,7 +41,7 @@ public class TwitterFileServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		byte[] bytes = Files.readAllBytes(new File("C:\\Users\\admin\\Project\\ssatwitter\\src\\resources\\employee.json").toPath());
+		byte[] bytes = Files.readAllBytes(new File("C:\\Users\\admin\\Project\\ssatwitter\\src\\main\\resources\\employee.json").toPath());
 		response.setContentType("text/json");
 		PrintWriter pw = response.getWriter();
 		if (bytes == null) {

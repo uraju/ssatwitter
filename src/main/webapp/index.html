@@ -62,7 +62,7 @@
 		<div id="id01"></div>
 		<script>
 			var xmlhttp = new XMLHttpRequest();
-			var url = "http://localhost:8080/ssatwitter/TwitterFileServlet";
+			var url = "./TwitterFileServlet";
 
 			xmlhttp.onreadystatechange = function() {
 				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -80,7 +80,7 @@
 	    		for (var i =0 ; i < arr.length; i++){
 	    			data = arr[i];
 					var obj1 = document.getElementById("id01");
-					vhtml = vhtml + '<div class="row bgcolor"><div class="col-md-2"><img src="http://localhost:8080/ssatwitter/img/'+ data.pic +'" alt="Profile Picture" height="72" width="72"></div><div class="col-md-4"><span class="lead">' + data.fullName + '</span><br/><span>' + data.title + '</div></div>';
+					vhtml = vhtml + '<div class="row bgcolor"><div class="col-md-2"><img src="./img/'+ data.pic +'" alt="Profile Picture" height="72" width="72"></div><div class="col-md-4"><span class="lead">' + data.fullName + '</span><br/><span>' + data.title + '</div></div>';
 				}
 				obj1.innerHTML = vhtml;
 			}
